@@ -35,10 +35,11 @@ The CONFIG object contains your configuration:
 ## main()
 1. The script will batch-read your sourceCalendar, usually in chunks of for example 50 to 100 CalendarEvents, until the batch is empty.
 2. For each CalendarEvent in the batch:
-  a. determine the type of event
-  b. preprocess where needed
-3. Create the event in the targetCalendar;
-   a. Recurring CalendarEvents will fail if a higher sequence number of that recurringEventId already exists (or even if the recurringEventId exists). If so, strip these recurring event details, and recreate the CalendarEvent using the same recurrance rule if possible.
+   a. determine the type of event
+   b. preprocess where needed
+4. Create the event in the targetCalendar;
+   a. persist the CalendarEvent
+   b. recurring CalendarEvents will fail if a higher sequence number of that recurringEventId already exists (or even if the recurringEventId exists). If so, strip these recurring event details, and recreate the CalendarEvent using the same recurrance rule if possible.
      
 ## deleteTargetCalendar()
 If your targetCalendar becomes polluted of trying and improving your script, you might want to bulk-clean your targetCalendar. In this method you can define a custom period to clean. It does obay the IS_DRY_RUN setting from the CONFIG though.
