@@ -46,14 +46,14 @@ If your targetCalendar becomes polluted of trying and improving your script, you
 # Limitations
 * Running an AppScript is limited in time. After some minutes your script will be auto-terminated by Google. This will be about 400+ CalendarEvents later in my experience.
 * Google has limits on the use of its API: (Source: https://support.google.com/a/answer/2905486)
-  |---|---|
+  
   | Limit | Penalty |
   |---|---|
-  | ~10.000 invites sent to people outside primary/secondairy domain | penalty: possibly 1 month |
-  | ~100.000 events created in a Calendar in short period | penalty: possibly several months |
-  | ~2000 emails sent to external guests in a short period | penalty: possibly 24 hours |
-  | Creation of >60 Calendars in short period | penalty: possibly several hours |
-  | Sharing a Calendar with many users in a short period |/*    penalty: possibly several hours |
-  |---|---|
+  | ~10.000 invites sent to people outside primary/secondairy domain | possibly 1 month |
+  | ~100.000 events created in a Calendar in short period | possibly several months |
+  | ~2000 emails sent to external guests in a short period | possibly 24 hours |
+  | Creation of >60 Calendars in short period | possibly several hours |
+  | Sharing a Calendar with many users in a short period | possibly several hours |
+  
   
 
